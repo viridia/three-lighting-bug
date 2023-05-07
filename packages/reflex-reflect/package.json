@@ -1,0 +1,20 @@
+{
+  "name": "@faery/reflex-reflect",
+  "version": "0.0.1",
+  "description": "Runtime type descriptors for editable properties.",
+  "module": "dist",
+  "types": "src",
+  "main": "src",
+  "scripts": {
+    "build": "tsc --project tsconfig.src.json",
+    "clean": "rimraf dist",
+    "lint": "../../node_modules/eslint/bin/eslint.js -c ../../.eslintrc.js",
+    "test": "npm run test:compile",
+    "test:compile": "tsc --noEmit --project ./tsconfig.src.json"
+  },
+  "author": "Talin <viridia@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "fast-deep-equal": "^3.1.3"
+  }
+}

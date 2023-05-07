@@ -1,0 +1,27 @@
+{
+  "name": "@faery/editor",
+  "version": "0.0.1",
+  "description": "@faery/editor",
+  "module": "src/index.ts",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "scripts": {
+    "build": "tsc --noEmit --project ./tsconfig.src.json",
+    "clean": "rimraf dist build",
+    "test": "npm run test:compile",
+    "test:compile": "tsc --noEmit --project ./tsconfig.src.json"
+  },
+  "author": "Talin <viridia@gmail.com>",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "@faery/engine": "*",
+    "@faery/game-ui": "*",
+    "@faery/geometry": "*",
+    "@faery/keys": "*",
+    "@faery/reflex": "*",
+    "@msgpack/msgpack": "^2.7.2",
+    "clsx": "^1.2.1",
+    "core-js": "^3.29.1",
+    "msgpack-javascript": "^0.10.0"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "@faery/reflex",
+  "version": "0.0.1",
+  "description": "Reactive game scripting.",
+  "module": "dist",
+  "types": "src",
+  "main": "src",
+  "scripts": {
+    "build": "tsc --project tsconfig.mjs.json",
+    "clean": "rimraf dist",
+    "lint": "../../node_modules/eslint/bin/eslint.js -c ../../.eslintrc.js",
+    "test": "npm run test:compile",
+    "test:compile": "tsc --noEmit --project ./tsconfig.mjs.json"
+  },
+  "author": "Talin <viridia@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@faery/reflex-reflect": "^0.0.1",
+    "fast-deep-equal": "^3.1.3"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": false,
+    "skipLibCheck": true,
+    "declaration": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "strictNullChecks": true,
+    "strictPropertyInitialization": true,
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "preserve",
+    "jsxImportSource": "solid-js",
+    // "jsx": "react-jsx",
+    "baseUrl": ".",
+    "paths": {
+      // These are needed to make VSCode auto-import work
+      "@faery/common": ["packages/common/src"],
+      "@faery/common/*": ["packages/common/src/*"],
+      "@faery/engine": ["packages/engine/src"],
+      "@faery/engine/*": ["packages/engine/src/*"],
+      "@faery/game-ui": ["packages/game-ui/src"],
+      "@faery/game-ui/*": ["packages/game-ui/src/*"],
+      "@faery/geometry": ["packages/geometry/src"],
+      "@faery/geometry/*": ["packages/geometry/src/*"],
+      "@faery/reflex": ["packages/reflex/src"],
+      "@faery/reflex/*": ["packages/reflex/src/*"],
+    },
+    "types": ["vite-plugin-solid-svg/types", "vite/client"]
+  }
+}

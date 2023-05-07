@@ -1,0 +1,36 @@
+{
+  "name": "@faery/game-ui",
+  "version": "0.0.1",
+  "description": "UI widgets for game.",
+  "types": "src/index.ts",
+  "module": "src/index.ts",
+  "main": "src/index.ts",
+  "scripts": {
+    "build": "tsc --project ./tsconfig.src.json",
+    "clean": "rimraf dist",
+    "lint": "../../node_modules/eslint/bin/eslint.js -c ../../.eslintrc.js",
+    "test": "npm run test:compile",
+    "test:compile": "tsc --noEmit --project ./tsconfig.src.json"
+  },
+  "author": "Talin <viridia@gmail.com>",
+  "license": "MIT",
+  "babel": {
+    "extends": "../../babel.config.json",
+    "presets": [
+      [
+        "@babel/preset-react",
+        {
+          "runtime": "automatic"
+        }
+      ],
+      "@babel/preset-env",
+      "@babel/preset-typescript"
+    ]
+  },
+  "dependencies": {
+    "@faery/engine": "*",
+    "@faery/reflex": "*"
+  },
+  "devDependencies": {
+  }
+}

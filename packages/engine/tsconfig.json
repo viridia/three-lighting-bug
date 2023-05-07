@@ -1,0 +1,12 @@
+{
+  "extends": "../../tsconfig",
+  "sourceMap": true,
+  "compilerOptions": {
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "noEmit": false,
+    // "importsNotUsedAsValues": "error",
+    "paths": {}
+  },
+  "include": ["src/**/*.ts", "src/**/*.tsx"]
+}

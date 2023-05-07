@@ -1,0 +1,33 @@
+{
+  "name": "@faery/los-editor",
+  "version": "0.0.1",
+  "description": "@faery/editor",
+  "main": "src/index.ts",
+  "scripts": {
+    "build": "npm run build:vite",
+    "build:assets": "vite build",
+    "build:vite": "tsc && vite build",
+    "clean": "rimraf dist build",
+    "lint": "eslint -c ../../.eslintrc.js src --ext ts --ext tsx",
+    "serve": "vite preview",
+    "start": "npm run start:vite",
+    "start:vite": "vite",
+    "test": "npm run test:compile",
+    "test:compile": "tsc --noEmit --project ./tsconfig.src.json"
+  },
+  "author": "Talin <viridia@gmail.com>",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "@faery/editor": "*",
+    "@faery/engine": "*",
+    "@faery/game-ui": "*",
+    "@faery/keys": "*",
+    "@faery/reflex": "*",
+    "clsx": "^1.2.1",
+    "core-js": "^3.29.1",
+    "msgpack-javascript": "^0.10.0"
+  },
+  "devDependencies": {
+    "react-refresh": "^0.14.0"
+  }
+}

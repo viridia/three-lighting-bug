@@ -1,0 +1,14 @@
+{
+  "extends": "./tsconfig",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "module": "esnext",
+    // "composite": true,
+    // "rootDir": "../..",
+    "paths": {
+      "@faery/reflex": ["../reflex/dist"],
+      "@faery/reflex/*": ["../reflex/dist/*"],
+    },
+  },
+  "exclude": ["src/**/*.test.ts", "src/**/*.test.tsx"]
+}

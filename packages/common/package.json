@@ -1,0 +1,17 @@
+{
+  "name": "@faery/common",
+  "version": "0.0.1",
+  "description": "3D game engine for large tiled worlds.",
+  "module": "src/index.ts",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "scripts": {
+    "build": "tsc --project ./tsconfig.src.json",
+    "clean": "rimraf dist",
+    "lint": "../../node_modules/eslint/bin/eslint.js -c ../../.eslintrc.js",
+    "test": "tsc --noEmit --project ./tsconfig.src.json",
+    "test:compile": "tsc --noEmit --project ./tsconfig.src.json"
+  },
+  "author": "Talin <viridia@gmail.com>",
+  "license": "Apache-2.0"
+}
